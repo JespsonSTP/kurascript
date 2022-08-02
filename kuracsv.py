@@ -13,8 +13,8 @@ smtp_obj = smtplib.SMTP(host='smtp.gmail.com', port=587)
 smtp_obj.ehlo()
 smtp_obj.starttls()
 smtp_obj.ehlo()
-email="jespson.saintpierre@lastmiletalent.com"
-password="jpjalscbzswchjwx"
+email="yourownemail"
+password="your own password"
 diagnostic_num=getpass.getpass("Enter diagnostic num: ")
 smtp_obj.login(email, password)
 msg = EmailMessage()
