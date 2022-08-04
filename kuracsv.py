@@ -9,13 +9,10 @@ smtp_obj = smtplib.SMTP(host='smtp.gmail.com', port=587)
 smtp_obj.ehlo()
 smtp_obj.starttls()
 smtp_obj.ehlo()
-#get user email, and password to use gmail to send email 
 email=getpass.getpass(prompt="Enter email: ")
-password=getpass.getpass(prompt="Enter diagnostic num: ")
-#get diagnostic number
+password=getpass.getpass(prompt="Enter password: ")
 diagnostic_num=getpass.getpass(prompt="Enter diagnostic num: ")
 smtp_obj.login(email, password)
-
 
 #admin email for cc 
 admin1 = getpass.getpass(prompt="Enter email: ") 
@@ -23,11 +20,9 @@ admin2 = getpass.getpass(prompt="Enter email: ")
 admin3 = getpass.getpass(prompt="Enter email: ") 
 admin4 = getpass.getpass(prompt="Enter email: ") 
 
-
 #function to send email
 def send_email(email, stu_email, diagnostic_num, stu_name, stu_grade, admin1, admin2, admin3, admin4):
     #This function contains all the information needed to send an email using smtp
-    #we create a new message everyemail because of an subject error
     msg = EmailMessage()
     msg.set_content(f"Hi {stu_name}, Congratulations for completing diagnotic {diagnostic_num}. Here is your score {stu_grade}")
 
