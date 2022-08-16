@@ -1,0 +1,19 @@
+first name,last name,email,grade,Score out of 5,perc_grade
+Jespson,st pierre,testemail1@yahoo.com,14 / 20,"Question 1: 5/5
+Question 2: 5/5
+Question 3: 4/5
+Question 4: 0/5
+
+",70
+elvis,gain,testemail2@yahoo.com,8 / 20,"Question 1: 4/5
+Question 2: 0/5
+Question 3: 4/5
+Question 4: 0/5
+
+",40
+maxima,tirede,testemail3@yahoo.com,17 / 20,"Question 1: 5/5
+Question 2: 5/5
+Question 3: 4/5
+Question 4: 3/5
+
+",85
