@@ -20,7 +20,3 @@ once prompted
 
 ## Optional
 * the admins variable are onlt there as placeholder for emails that you may want to cc, so taking them out will not break the script. it might have been too much tbh lol
-
-
-
-
